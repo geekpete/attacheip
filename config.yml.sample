@@ -2,7 +2,7 @@ s3:
  account_number: '314291494078'
  name              : ''
  aws_access_key    : ''
- aws_secret_key    : 'zt9PivTJoiYAOwvu3Tibgj54PX6XFGDEIg9eumc+'
+ aws_secret_key    : ''
 smtp:
  name             : 'ses-smtp-user.20131206-125131'
  user             : ''
