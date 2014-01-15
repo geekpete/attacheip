@@ -36,9 +36,10 @@ def main(argv):
         reservations = ec2.get_all_instances(filters={'tag-value' : tag})
 
         for reserve in reservations:
-            server = reserve.instances[0].id
-            print server
-            boto.ec2.EC2Connection.associate_address(ec2,public_ip=ip,instance_id=server)
+            id = reserve.instances[0].id
+            server = reserve.instances[0].state
+            if server == "running":
+                boto.ec2.EC2Connection.associate_address(ec2,public_ip=ip,instance_id=id)
     except BaseException, emsg:
          logging.warning(timestamp + ': Cannot send message: ' + str(emsg))
          sys.exit(2)
