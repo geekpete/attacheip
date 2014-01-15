@@ -1,0 +1,20 @@
+s3:
+ account_number: '314291494078'
+ name              : ''
+ aws_access_key    : ''
+ aws_secret_key    : 'zt9PivTJoiYAOwvu3Tibgj54PX6XFGDEIg9eumc+'
+smtp:
+ name             : 'ses-smtp-user.20131206-125131'
+ user             : ''
+ password         : ''
+ server           : 'email-smtp.us-east-1.amazonaws.com'
+ sender_address   : 'lyndon.swan@otherlevels.com'
+ port             : '587'
+recipients:
+    - address : 'lyndon.swan@otherlevels.com'
+general:
+ format: 'standard'
+ filter: ''
+ time_zone: 'Australia/Brisbane'
+ debug: 'true'
+logfile: 'attacheip.log'
